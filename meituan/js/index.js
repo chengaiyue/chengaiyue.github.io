@@ -216,6 +216,7 @@ listData.forEach(function (item,i) {
 	}
 	
 	$('.back').on('touchend',function () {
+		$('.scrollBar').css('opacity',0);
 		MTween({
 			el: $('.scroll')[0],
 			target: {translateY: 0},
